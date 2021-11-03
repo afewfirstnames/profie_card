@@ -1,0 +1,148 @@
+/* Global Styles */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  /* Primary Colors */
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-blue: hsl(229, 23%, 23%);
+  --gray-blue: hsl(227, 10%, 46%);
+
+  /* Neutral */
+  --gray: hsl(0, 0%, 59%);
+
+  --flow: 1em;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--dark-cyan);
+  background-image: url("/images/bg-pattern-top.svg"),
+    url("/images/bg-pattern-bottom.svg");
+  background-position: right 50vw bottom 40vh, left 50vw top 50vh;
+  background-repeat: no-repeat;
+  line-height: 1.6;
+  min-height: 100vh;
+  color: var(--dark-blue);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.flow-content > * + * {
+  margin-top: var(--flow, 1em);
+}
+
+.split {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 1.125rem;
+}
+
+p {
+  color: var(--gray);
+  font-size: 0.875rem;
+}
+
+.card__name p {
+  font-size: 1.125rem;
+}
+
+.stat p {
+  font-size: 0.625rem;
+  letter-spacing: 1.5px;
+}
+
+/* Profile Card */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background: #fff;
+  border-radius: 1.25em;
+  text-align: center;
+  margin-top: auto;
+}
+
+.card__name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0;
+}
+
+.card__name > * {
+  margin-left: 0.5em;
+}
+
+.stat {
+  text-align: center;
+}
+
+.card__stats {
+  padding: 1.5rem;
+  width: 100%;
+  border-top: 0.1rem solid rgba(150, 150, 150, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-img {
+  border-radius: 1.25em 1.25em 0 0;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 90px;
+  margin-top: -2.5em;
+  border: solid white 5px;
+}
+
+.card__location {
+  margin-top: 0;
+}
+
+/* Footer Attribution */
+
+footer {
+  margin-top: auto;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
