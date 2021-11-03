@@ -13,7 +13,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
+  - [Continued development](#continued-development)`
 - [Author](#author)
 
 ## Overview
@@ -28,7 +28,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/mobilefirst-profile-card-BgLYvh6sz)
 - Live Site URL: [Live Site](https://jovial-neumann-bf9a95.netlify.app/)
 
 ## My process
